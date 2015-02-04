@@ -86,7 +86,7 @@ var App = {
         this.echo("|                I have been coding in a commercial environment for " + commandText('over 10 years.'));
         this.echo("|                I also do my fair share of front end development using technologies such as " + commandText('Angular.js') + " and " + commandText('jQuery'));
         this.echo();
-        this.echo("|  Employment:   I am currently employed as a " + commandText('Senior Backend Developer') + " at " + commandText('Holler') + " http://www.holler.com.au");
+        this.echo("|  Employment:   I am currently " + commandText("freelancing") + " in the " + commandText("Sydney, NSW") + " area. Get in touch if you'd like to discuss a proposal!");
         this.echo();
     },
 
