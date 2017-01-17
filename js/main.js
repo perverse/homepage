@@ -19,7 +19,7 @@ var App = {
             "|[[b;#00DE12;]\t|_|  \\___/|_| |_|_| |_|_|\\___| .__/ \\__. |_| |_|\\___( )___\\___/|_| |_| |_|]\t|\n"+
             "|[[b;#00DE12;]\t                             |_|    |___/                                 ]\t|\n"+
             "|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  |\n"+
-            "|\tHi, I'm " + commandText('Ronnie Pyne') + " - Backend Web Developer in Sydney, Australia. \t\t\t|\n"+
+            "|\tHi, I'm " + commandText('Ronnie Pyne') + " - Full Stack PHP Web Developer in Sydney, Australia.  \t|\n"+
             "|\tPlease type " + commandText('menu') + " for a list of commands.  \t\t\t\t\t\t\t\t\t|\n"+
             "|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  |\n"+
             "####################################################################################\n";
@@ -36,7 +36,7 @@ var App = {
         this.echo("|  " + commandText("motd") + "               - Display Message of the Day");
         this.echo();
         this.echo("|  " + commandText("about") + "              - Summary of me");
-        this.echo("|  " + commandText("projects") + "           - Recent projects of mine");
+        this.echo("|  " + commandText("projects") + "           - Some recent projects of mine");
         this.echo("|  " + commandText("skills") + "             - What I can do");
         this.echo("|  " + commandText("awards") + "             - Awards and features for my work");
         this.echo();
@@ -79,23 +79,25 @@ var App = {
     about: function(){
         this.echo();
         this.echo("|  Name:         " + commandText('Ronnie Pyne'));
-        this.echo("|  DOB:          25/11/1985 (" + commandText('28') + " y.o)");
+        this.echo("|  DOB:          25/11/1985");
         this.echo("|  Location:     " + commandText('Surry Hills, NSW'));
         this.echo();
-        this.echo("|  Vocation:     I am a Backend Web Developer (primarily " + commandText('PHP') + ", " + commandText('Node.js') + ") and DevOps (Linux, AWS) specialist.");
-        this.echo("|                I have been coding in a commercial environment for " + commandText('over 10 years.'));
-        this.echo("|                I also do my fair share of front end development using technologies such as " + commandText('Angular.js') + " and " + commandText('jQuery'));
+        this.echo("|  Vocation:     I am a Full Stack Web Developer (primarily " + commandText('PHP') + ", " + commandText('Node.js') + ") and DevOps (Linux, AWS) specialist.");
+        this.echo("|                I have been coding in a commercial environment for " + commandText('over 12 years.'));
+        this.echo("|                My main weapons of choice on the front end are " + commandText('Angular.js') + " and " + commandText('jQuery.'));
         this.echo();
-        this.echo("|  Employment:   I am currently " + commandText("freelancing") + " in the " + commandText("Sydney, NSW") + " area. Get in touch if you'd like to discuss a proposal!");
+        this.echo("|  Employment:   I am currently " + commandText("freelancing") + " in the " + commandText("Sydney, NSW") + " area, but am always open to interesting opporunities of all kinds. Get in touch if you'd like to discuss a proposal!");
         this.echo();
     },
 
     projects: function(){
         this.echo();
-        this.echo("|  " + commandText('Audi - Land of Quattro') + "            http://www.landofquattro.com.au     // Backend Lead");
-        this.echo("|  " + commandText('Heineken - Open Your City') + "         http://www.openyourcity.com.au      // Backend Lead");
-        this.echo("|  " + commandText('Betta Electrical') + "                  http://www.betta.com.au             // Backend Developer");
-        this.echo("|  " + commandText('Baptist World Aid Australia') + "       http://www.baptistworldaid.org.au   // Backend Lead");
+        this.echo("|  " + commandText('Lendlease Digital Signage DSP/CMS') + "    https://goo.gl/aZgIrW                          // Lead Developer");
+        this.echo("|  " + commandText('SimplyAskIt') + "                          http://www.simplyaskit.com.au                  // Backend Developer");
+        this.echo("|  " + commandText('Audi - Land of Quattro') + "               http://www.holler.com.au/work/audi-loq         // Backend Lead");
+        this.echo("|  " + commandText('Heineken - Open Your City') + "            http://www.holler.com.au/work/open-your-city   // Backend Lead");
+        this.echo("|  " + commandText('Betta Electrical') + "                     http://www.betta.com.au                        // Backend Developer");
+        this.echo("|  " + commandText('Baptist World Aid Australia') + "          http://www.baptistworldaid.org.au              // Backend Lead");
         this.echo();
     },
 
@@ -115,10 +117,11 @@ var App = {
         this.echo("|  " + commandText("Frameworks and CMS"));
         this.echo();
         this.echo("|  " + commandText('Laravel') + "                ##[[g;#42D100;]###############################################]    ##");
+        this.echo("|  " + commandText('AngularJS') + "              ##[[g;#42D100;]###############################################]    ##");
         this.echo("|  " + commandText('Silverstripe') + "           ##[[g;#5BD100;]#############################################]      ##");
         this.echo("|  " + commandText('Sails.js') + "               ##[[g;#99D100;]#########################################]          ##");
         this.echo("|  " + commandText('Express') + "                ##[[g;#B2D100;]########################################]           ##");
-        this.echo("|  " + commandText('Symfony') + "                ##[[g;#D1B900;]##############################]                     ##");
+        this.echo("|  " + commandText('Symfony') + "                ##[[g;#D1B900;]################################]                   ##");
         this.echo("|  " + commandText('Zend Framework') + "         ##[[g;#D1B900;]############################]                       ##");
         this.echo();
         this.echo("|  " + commandText("Other"));
@@ -126,6 +129,7 @@ var App = {
         this.echo("|  " + commandText('AWS') + "                    ##[[g;#5BD100;]############################################]       ##");
         this.echo("|  " + commandText('Grunt/Gulp') + "             ##[[g;#B2D100;]#######################################]            ##");
         this.echo("|  " + commandText('Virtualbox') + "             ##[[g;#B2D100;]#######################################]            ##");
+        this.echo("|  " + commandText('Docker') + "                 ##[[g;#B2D100;]#####################################]              ##");
         this.echo("|  " + commandText('Vagrant') + "                ##[[g;#D13F00;]#########]                                          ##");
         this.echo();
     },
@@ -146,8 +150,8 @@ var App = {
 
     awards: function(){
         this.echo();
-        this.echo("|  " + commandText('FWA Site of the Day') + ", 24th September    | Audi - Land of Quattro                http://www.thefwa.com/site/audi-australia-land-of-quattro");
-        this.echo("|  " + commandText('Google Sandbox') + "                         | Audi - Land of Quattro                http://www.thinkwithgoogle.com/campaigns/audi-australia-land-of-quattro.html");
+        this.echo("|  " + commandText('FWA Site of the Day') + ", 24th September 2013   | Audi - Land of Quattro                http://www.thefwa.com/site/audi-australia-land-of-quattro");
+        this.echo("|  " + commandText('Google Sandbox') + "                             | Audi - Land of Quattro                http://www.thinkwithgoogle.com/campaigns/audi-australia-land-of-quattro.html");
         this.echo();
     },
 
