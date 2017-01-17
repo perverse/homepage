@@ -168,6 +168,10 @@ var App = {
         this.exec('twitter');
         this.exec('contact');
         this.exec('credits');
+    },
+
+    ls: function(){
+        this.exec('menu');
     }
 }
 
